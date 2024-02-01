@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Dawson's Car Dealership</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles-1.css">
+        <script src="./js/cartScript.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+
+
+            
+
+            <nav>
+
+                <span id="banner"><span id="highlight">Dawson's</span> Car Dealership</span>
+
+                <li><a href="./Landing.html"> Homepage </a> </li>
+                <li><a href="./About.html"> About Us </a> </li>
+                <li><a href="./NewCars.html"> New Cars</a> </li>
+                <li><a href="./UsedCars.html"> Used Cars</a> </li>
+                <li><a href="./Store.html"> Store</a> </li>
+                <li><a class="current" href="#"> Cart</a> </li>
+                <li><a id="logout" href="./Home.html"> Log Out</a> </li>
+
+
+
+            </nav>
+        </header>
+
+
+        <div id="main">
+
+            <div id="cart">
+
+                <ul id="cartList">
+
+                </ul>
+
+                <div>SUB-TOTAL: <span id="subTotal">0</span><span> &dollar;</span></div>
+                <div>TOTAL: <span id="total">0</span><span> &dollar;</span></div>
+
+                <button id="clear">Empty Cart</button>
+            </div>
+
+            <div id= "checkout">
+
+                <form id="myForm">
+
+                    <div id="cardInfo">
+                        <h2>Card Information</h2>
+
+                        <label>Card Number *</label>
+                        <input type="text" placeholder="XXXX XXXX XXXX XXXX" name="cNumber" >
+                        <p>The card number must be 16 characters and include spaces</p>
+
+                        <label>Expiration *</label>
+                        <input class="small" type="text" placeholder="DD MM" name="expiration">
+                        <p>The expiration date must be 4 characters and include spaces</p>
+
+
+                        <label>Cardholder Name *</label>
+                        <input type="text" placeholder="John Doe" name="cName">
+                        <p>The name must have a first and last name</p>
+
+
+                        <label>CVC *</label>
+                        <input class="small" type="text" placeholder="XXX" name="cvc">
+                        <p>CVC must be 3 digits with no spaces</p>
+
+
+                        <input type="submit" value="Purchase"> 
+                    
+                        <input type="reset" value="Clear Information">
+
+                    </div>
+
+                    <div id="shippingInfo">
+                        <h2>Shipping</h2>
+
+                        <label>Name *</label>
+                        <input type="text" placeholder="John Doe" name="aName">
+                        <p>The name must have a first and last name</p>
+
+
+                        
+                        <label>Address *</label>
+                        <input type="text" placeholder="123 Park Street" name="address">
+                        <p>The address must have the street number and street name</p>
+
+
+                        
+                        <label>Address Line 2</label>
+                        <input type="text">
+
+
+                        
+                        <label>Country *</label>
+                        <input type="text" name="country">
+                        <p>The country field must capitalized</p>
+
+
+                        
+                        <label>Province / State *</label>
+                        <input class="small" type="text" placeholder="XX" name="province">
+                        <p>The province or state must be abreviated</p>
+
+
+                        
+                        <label>City *</label>
+                        <input type="text" name="city">
+                        <p>The city field must capitalized</p>
+
+
+                        
+                        <label>Postal Code *</label>
+                        <input type="text" placeholder="XXX XXX" name="pCode">
+                        <p>The postal code must be 6 characters, capitalized and include spaces </p>
+
+
+                    </div>
+                    
+
+
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <footer>
+
+            <div class="social-media">
+                <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                    <img src="./media/youtube.png" alt="YouTube"> 
+                </a>
+
+                <a href="https://instagram.com" target="_blank" title="instagram">
+                    <img src="./media/instagram.png" alt="facebook" > 
+                </a>
+
+                <a href="https://facebook.com" target="_blank" title="facebook">
+                    <img src="./media/facebook.png" alt="facebook" >
+                </a>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
